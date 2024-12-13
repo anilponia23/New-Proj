@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html>
+    <!-- Name: Anil Ponia
+    Name of file: homework4.html
+    Date created: December 1,2024
+    Date last edited: December 4, 2024
+    Verison: 3.0
+    Description: A healthcare registration form that gathers personal information and account setup details. -->
+    <head>
+        <title>Anil's Assignment 4</title>
+        <link rel='stylesheet' href='homework4.css' type='text/css' />
+    </head>
+    <script src="homework4.js" ></script>
+    <header>
+        <iframe class="headeriframe" id="headerframe" name="headerframe" src="header4.html"  scrolling="no" width="100%" height="240" frameborder="0px"></iframe>       
+    </header>
+    <div id="welcome"></div>
+     <script>
+        cookieval();
+        var nameCookie = getCookie("name");
+        window.frames["bodyframe"].document.getElementById("firstname").value = nameCookie;
+    </script>
+    <body>
+        <iframe class="bodyiframe" id="bodyframe" name="bodyframe" src="homework4body.html" scrolling="no" width="100%" height="1500" frameborder="0px"></iframe>
+    </body>
+    <footer>
+        <hr><hr>
+        <b>Memorial Hermann - Houston TX</b>
+        <button style="background-color:#afe1d9" class="contact"><a href="https://www.memorialhermann.org/about-us/contact-us"> Contact Us</a></button>
+        <br>
+        6411 Fannin St
+        <br>
+        Houston, TX 77030
+    </footer>
+</html>
